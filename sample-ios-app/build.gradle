@@ -4,7 +4,7 @@ plugins {
 
 kotlin {
     targets {
-        // fromPreset(presets.iosArm64, 'iosCommon')
+//         fromPreset(presets.iosArm64, 'iosCommon')
         fromPreset(presets.iosArm64, 'ios64') {
             binaries.framework('ReactiveSample')
         }

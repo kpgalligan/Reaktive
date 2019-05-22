@@ -10,6 +10,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         showLoading()
         ComputationKt.calculate().subscribe(observer: ResultObserver(showResult: showResult(text:)))
+        
+        FailTestsKt.makeCrash()
     }
     
     private func showLoading() {
